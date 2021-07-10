@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApproveDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/approve_img_detal"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/cupang"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/approve_nama_cupang_detal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Harga Jual"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/approve_harga_detal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Harga"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Nama Pembeli"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/approve_nama_pembeli_detal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Nama Pembeli"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="No Telpon Pembeli"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/approve_notelp_pembeli_detal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="No Telp"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Alamat Pembeli"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/approve_alamat_pembeli_detal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Alamat Pembeli"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</ScrollView>

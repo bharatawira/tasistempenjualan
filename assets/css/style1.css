@@ -1,0 +1,405 @@
+
+@CHARSET "UTF-8";
+/*
+over-ride "Weak" message, show font in dark grey
+*/
+
+.progress-bar {
+    color: #333;
+} 
+
+/*
+Reference:
+http://www.bootstrapzen.com/item/135/simple-login-form-logo/
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+
+    .form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+.login-form {
+	margin-top: 60px;
+}
+
+form[role=login] {
+	color: #5d5d5d;
+	background: #f2f2f2;
+	padding: 26px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+    form[role=login] legend{
+        font-size: 26px;
+        text-align: center;
+        font-weight:300;
+    }
+
+	form[role=login] img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+	form[role=login] input,
+	form[role=login] button {
+		font-size: 18px;
+		margin: 16px 0;
+	}
+	form[role=login] > div {
+		text-align: center;
+	}
+	
+.navbar{
+  background-color: rgb(214, 137, 21);
+  overflow: hidden;
+  height: 55px;
+  margin-top:-11px;
+  margin-left: -5px;
+  margin-right: -8px;
+}
+.side-nav {
+margin: 100;
+padding: 100;
+list-style:none;
+background-color: rgb(105, 125, 148);
+border-style:solid;
+border-color: #CCC;
+border-width: 0 0px 0 0;
+position:absolute;
+}
+::after, ::before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.main-content {
+margin-left: 0;
+padding: 0;
+margin-right: -8px;
+}
+.main-content a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 220px;
+  padding-top: 10px;
+}
+.side-nav a{
+  font-size: 15px;
+  color: white;
+}
+#main{
+	transition: margin-left 0.5;
+	padding: 20px;
+	overflow: hidden;
+}
+#main-content .title {
+    background-color: #eef1f7;
+    border-bottom: 1px solid #b8bec9;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: #333;
+    font-size: 18px;
+}
+.main-content .title {
+    background-color: #eef1f7;
+    border-bottom: 1px solid #b8bec9;
+    padding: 10px 220px;
+    font-weight: 700;
+    color: #333;
+    font-size: 18px;
+}
+#main-content .picture {
+  padding: 10px 15px;
+  font-weight: 700;
+  color: #333;
+  font-size: 18px;
+}
+.main-content .picture {
+  padding: 10px 220px;
+  font-weight: 700;
+  color: #333;
+  font-size: 18px;
+}
+.navbar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+.navbar-white {
+  background-color: #fff;
+}
+.layout-fixed .main-sidebar {
+  bottom: 0;
+  float: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+.elevation-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important;
+}
+[class*="sidebar-dark-"] {
+  background-color: #343a40;
+}
+.main-sidebar {
+  overflow-y: hidden;
+  z-index: 1038;
+}
+.main-sidebar, .main-sidebar::before {
+  transition: margin-left .3s ease-in-out,width .3s ease-in-out;
+  width: 250px;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+:not(.layout-fixed) .main-sidebar {
+  min-height: 100%;
+}
+body {
+  font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+  transition: margin-left .3s ease-in-out;
+  margin-left: 250px;
+}
+.navbar-white {
+  background-color: #fff;
+}
+.main-header {
+  border-bottom: 1px solid #dee2e6;
+  z-index: 1034;
+}
+.navbar-expand {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.navbar {
+  position: relative;
+display: flex;align-items: center;
+  padding: .5rem .5rem;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+.navbar-nav {display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+dl, ol, ul {
+  margin-top: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.main-header .navbar-nav .nav-item {
+  margin: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.navbar-nav {
+  list-style: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.5);
+}
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.main-header .nav-link {
+  height: 2.5rem;
+  position: relative;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+}
+[role="button"] {
+  cursor: pointer;
+}
+
+.wrapper, body, html {
+  min-height: 100%;
+}
+.main-header .navbar-nav .nav-item {
+  margin: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.navbar-nav {
+  list-style: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.5);
+}
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.main-header .nav-link {
+  height: 2.5rem;
+  position: relative;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+}
+[role="button"] {
+  cursor: pointer;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.navbar-nav {
+  list-style: none;
+}
+.navbar-nav {
+  list-style: none;
+}
+.main-header .navbar-nav .nav-item {
+  margin: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.navbar-nav {
+  list-style: none;
+}
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+  transition: margin-left .3s ease-in-out;
+  margin-left: 250px;
+}
+.navbar-white {
+  background-color: #fff;
+}
+.navbar-light {
+  background-color: #f8f9fa;
+}
+.main-header {
+  border-bottom: 1px solid #dee2e6;
+  z-index: 1034;
+}
+.navbar-expand {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem .5rem;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+/*Navbar*/
+.navbar {
+  background-color: rgb(214, 137, 21);
+  overflow: hidden;
+  height: 55px;
+	margin-top: -10px;
+  margin-left: -240px;
+  margin-right: -8px;
+}
+.collapse .navbar-collapse{
+  background-color: rgb(214, 137, 21);
+}
+.navbar .navbar-nav .nav-link {
+	color: white;
+}
+.nav-link {
+  position: inherit;
+}
+.navbar .navbar-nav .nav-link:hover {
+	color: black;
+}
+
+.navbar .navbar-brand  {
+	font-size: 20px;
+}
+/*Akhir Navbar*/
+/* TABEL */
+.table .thead-dark th {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+  margin-right: -8px;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 0px solid #dee2e6;
+      border-bottom-color: rgb(222, 226, 230);
+}
+.table td, .table th {
+  padding: initial;
+  vertical-align: bottom;
+  border-top: 0px solid #dee2e6;
+      border-top-color: rgb(222, 226, 230);
+}
+th {
+  text-align: inherit;
+}
+table, th, td {
+  border-collapse: collapse;
+}
